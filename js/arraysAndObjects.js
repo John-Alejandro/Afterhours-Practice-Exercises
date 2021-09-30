@@ -7,10 +7,15 @@
  * >> minMax([2334454, 5]) ➞ [5, 2334454]
  * >> minMax([1]) ➞ [1, 1]
  *
+ *
  * Notes
  * All test arrays will have at least one element and are valid.
  */
-
+function minMax(arr){
+    var largeNum = Math.max(...arr);
+    var smallNum = Math.min(...arr);
+    return [smallNum,largeNum]
+}
 
 /**
  * Filter out Strings from an Array
@@ -28,7 +33,15 @@
  * Numbers in the array should not repeat.
  * The original order must be maintained.
  */
+function filterArray(arr) {
+    var intArr = [];
 
+    for (var i = 0; i < arr.length; i++){
+        if (typeof arr[i] !== "string"){
+            intArr.push(arr[i]);
+        }
+    }       return intArr
+}
 
 /**
  * Is the Average of All Elements a Whole Number?
@@ -42,7 +55,16 @@
  * >> isAvgWhole([1, 1, 1]) ➞ true
  * >> isAvgWhole([9, 2, 2, 5]) ➞ false
  */
-
+// function isAvgWhole(arr) {
+//     var arrSum = arr.reduce(function(a,b){
+//         return a + b;
+//     }0);
+//     var arrAvg = (arrSum/arr.length) || 0;
+//     if(arrAvg === % 2){
+//         return "true";
+//     }
+//         return "false";
+// }
 
 /**
  * Drink Sorting
@@ -58,7 +80,9 @@
  * Examples
  * >> sortDrinkByPrice(drinks) ➞ [{name: "lime", price: 10}, {name: "lemonade", price: 50}]
  */
+function sortDrinkByPrice(drinks){
 
+}
 
 /**
  * Scrabble Hand
@@ -103,7 +127,9 @@
  * Notes
  * Each tile is represented as an object with two keys: tile and score.
  */
+function maximumScore(){
 
+}
 
 /**
  * Converting Objects to Arrays
@@ -118,7 +144,9 @@
  * Notes
  * Return an empty array if the object is empty.
  */
+function toArray(){
 
+}
 
 /**
  * Array of Multiples
@@ -133,7 +161,9 @@
  * Notes
  * Notice that num is also included in the returned array.
  */
+function arrayOfMultiples(){
 
+}
 
 /**
  * Get Sum of People's Budget
@@ -152,7 +182,9 @@
  *        { name: "Martin",  age: 16, budget: 1600 }
  *    ]) ➞ 62600
  */
+function getBudgets(){
 
+}
 
 /**
  * Special Arrays
@@ -168,7 +200,9 @@
  * >> isSpecialArray([2, 7, 8, 8, 6, 1, 6, 3]) ➞ false
  *    // Index 3 has an even number 8.
  */
+function isSpecialArray(){
 
+}
 
 /**
  * Remove Duplicates from an Array
@@ -184,7 +218,9 @@
  * Tests are case sensitive.
  * Each array item is unique.
  */
+function removeDuplicates(){
 
+}
 
 /**
  * Lowercase and Uppercase Map
@@ -199,7 +235,9 @@
  * Notes
  * All of the letters in the input list will always be lowercase.
  */
+function mapping(){
 
+}
 
 /**
  * Can You Spare a Square?
@@ -220,7 +258,9 @@
  * >> tpChecker({ people: 3, tp: 20 }) ➞ "Your TP will last 58 days, no need to panic!"
  * >> tpChecker({ people: 4, tp: 12 }) ➞ "Your TP will last 26 days, no need to panic!"
  */
+function tpChecker(){
 
+}
 
 /**
  * Get Student Top Notes
@@ -247,7 +287,9 @@
  *       }
  *    ]) ➞ [5, 5, 4]
  */
+function getStudentTopNotes(){
 
+}
 
 /**
  * The Frugal Gentleman
@@ -268,7 +310,9 @@
  * Notes
  * All wines will be different prices, so there is no confusion in the ordering.
  */
+function chosenWIne(){
 
+}
 
 /**
  * Convert Address to Object
@@ -279,7 +323,9 @@
  * >> convertAddressToObject('8626 Sunny Oaks') ➞ {streetNumber: '8646', streetName: 'Sunny Oaks'}
  * >> convertAddressToObject('5408 Villa Nueva') ➞ {streetNumber: '5408', streetName: 'Villa Nueva'}
  */
+function convertAddressToObject(){
 
+}
 
 /**
  * Count total pets
@@ -293,7 +339,9 @@
  *       {name: 'Kenneth Howell', pets: 2}
  *    ]) ➞ 11
  */
+function totalPets(){
 
+}
 
 
 /**
@@ -311,7 +359,9 @@
  * Return [0, 0] for an empty string.
  * Return in the order of [hashes, pluses].
  */
+function hashPlusCount(){
 
+}
 
 /**
  * Amplify the Multiples of Four
@@ -341,7 +391,9 @@
  * A number a amplified by a factor b can also be read as: a * b.
  * A number a is exactly divisible by a number b when the remainder of the division a / b is equal to 0.
  */
+function amplify(){
 
+}
 
 /**
  * Record Temperatures
@@ -377,7 +429,9 @@
  * Index 0 will always be the low and index 1 will always be the high [low, high].
  * For reference these temps are °F but you do not need to convert any temperatures.
  */
+function recordTemps(){
 
+}
 
 /**
  * Index Shuffle
@@ -394,7 +448,9 @@
  * indexShuffle("holiday") ➞ "hldyoia"
  * indexShuffle("maybe") ➞ "myeab"
  */
+function indexShuffle(){
 
+}
 
 /**
  * Instant JAZZ
@@ -410,7 +466,9 @@
  * Notes
  * Return an empty array if the given array is empty.
  */
+function jazzify(){
 
+}
 
 /**
  * Purge and Organize
@@ -424,7 +482,9 @@
  * uniqueSort([1, 4, 4, 4, 4, 4, 3, 2, 1, 2]) ➞ [1, 2, 3, 4]
  * uniqueSort([6, 7, 3, 2, 1]) ➞ [1, 2, 3, 6, 7]
  */
+function uniqueSort(){
 
+}
 
 /**
  * Capitalize the First Letter of Each Word
@@ -440,7 +500,9 @@
  * Notes
  * Some words may contain more than one uppercase letter (see example #4).
  */
+function makeTitle(){
 
+}
 
 /**
  * Online Shopping
@@ -455,7 +517,9 @@
  * Notes
  * Ignore tax or additional fees when calculating the total order cost.
  */
+function freeShipping(){
 
+}
 
 /**
  * How Good is Your Name?
@@ -483,7 +547,9 @@
  * Notes
  * All names will be uppercase
  */
+function nameScore(){
 
+}
 
 /**
  * Burglary Series (06): Convert to Number
@@ -496,7 +562,9 @@
  * convertToNumber({ piano: "200", tv: "300" }) ➞ { piano: 200, tv: 300 }
  * convertToNumber({ piano: "200", tv: "300", stereo: "400" }) ➞ { piano: 200, tv: 300, stereo: 400 }
  */
+function convertToNumber(){
 
+}
 
 /**
  * Frequency Distribution
@@ -514,4 +582,6 @@
  * If given an empty array, return an empty object (see example #4).
  * The object should be in the same order as in the input array.
  */
+function getFrequencies(){
 
+}
