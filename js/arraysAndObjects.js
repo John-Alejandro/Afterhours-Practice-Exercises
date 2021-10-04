@@ -55,16 +55,14 @@ function filterArray(arr) {
  * >> isAvgWhole([1, 1, 1]) ➞ true
  * >> isAvgWhole([9, 2, 2, 5]) ➞ false
  */
-// function isAvgWhole(arr) {
-//     var arrSum = arr.reduce(function(a,b){
-//         return a + b;
-//     }0);
-//     var arrAvg = (arrSum/arr.length) || 0;
-//     if(arrAvg === % 2){
-//         return "true";
-//     }
-//         return "false";
-// }
+function isAvgWhole(arr) {
+    var arrSum = 0;
+    for (var i = 0; i < arr.length; i++) {
+        arrSum =  arr[i] + arrSum
+    }
+    var arrAvg = arrSum/arr.length
+   return Number.isInteger(arrAvg);
+}
 
 /**
  * Drink Sorting
@@ -81,8 +79,10 @@ function filterArray(arr) {
  * >> sortDrinkByPrice(drinks) ➞ [{name: "lime", price: 10}, {name: "lemonade", price: 50}]
  */
 function sortDrinkByPrice(drinks){
-    drinks.sort(function (a,b) {return a.price - b.price});
-    sortDrinkByPrice;
+    drinks.sort(function (drink1,drink2) {
+        return drink1.price - drink2.price
+    });
+    return drinks;
 }
 /**
  * Scrabble Hand
@@ -127,8 +127,12 @@ function sortDrinkByPrice(drinks){
  * Notes
  * Each tile is represented as an object with two keys: tile and score.
  */
-function maximumScore(){
-
+function maximumScore(arr){
+var tileSum = 0;
+for (var i = 0; i < arr.length; i++){
+    tileSum = arr[i].score + tileSum;
+}
+return tileSum;
 }
 
 /**
@@ -183,8 +187,12 @@ function arrayOfMultiples(){
  *        { name: "Martin",  age: 16, budget: 1600 }
  *    ]) ➞ 62600
  */
-function getBudgets(){
-
+function getBudgets(arr){
+var totalSum = 0;
+for (var i = 0; i < arr.length; i++){
+    totalSum = arr[i].budget + totalSum;
+}
+return totalSum;
 }
 
 /**
