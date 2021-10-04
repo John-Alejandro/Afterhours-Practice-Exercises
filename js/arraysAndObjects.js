@@ -81,9 +81,9 @@ function filterArray(arr) {
  * >> sortDrinkByPrice(drinks) ➞ [{name: "lime", price: 10}, {name: "lemonade", price: 50}]
  */
 function sortDrinkByPrice(drinks){
-
+    drinks.sort(function (a,b) {return a.price - b.price});
+    sortDrinkByPrice;
 }
-
 /**
  * Scrabble Hand
  * Given an array of scrabble tiles, create a function that outputs the maximum possible score a player can achieve by summing up the total number of points for all the tiles in their hand. Each hand contains 7 scrabble tiles.
@@ -144,10 +144,11 @@ function maximumScore(){
  * Notes
  * Return an empty array if the object is empty.
  */
-function toArray(){
-
-}
-
+// function toArray(obj){
+// var objectToArray = Object.values([]);
+// console.log(objectToArray)
+// }
+var toArray = object.entries();
 /**
  * Array of Multiples
  * Create a function named arrayOfMultiples that takes two numbers as arguments (num, length) and returns an array of multiples of num until the array length reaches length.
