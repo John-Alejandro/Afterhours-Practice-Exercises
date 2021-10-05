@@ -150,9 +150,9 @@ return tileSum;
  */
 // function toArray(obj){
 // var objectToArray = Object.values([]);
-// console.log(objectToArray)
+// return objectToArray;
 // }
-var toArray = object.entries();
+// var toArray = object.entries();
 /**
  * Array of Multiples
  * Create a function named arrayOfMultiples that takes two numbers as arguments (num, length) and returns an array of multiples of num until the array length reaches length.
@@ -166,9 +166,13 @@ var toArray = object.entries();
  * Notes
  * Notice that num is also included in the returned array.
  */
-function arrayOfMultiples(){
-
-}
+// function arrayOfMultiples(num,length){
+//     var numMultiples = 0;
+//     for (var i = 0; i < length.length; i++){
+//         numMultiples = ((num[i] + 1) * num);
+//     }
+//     return numMultiples;
+// }
 
 /**
  * Get Sum of People's Budget
@@ -209,8 +213,15 @@ return totalSum;
  * >> isSpecialArray([2, 7, 8, 8, 6, 1, 6, 3]) ➞ false
  *    // Index 3 has an even number 8.
  */
-function isSpecialArray(){
-
+function isSpecialArray(arr){
+    var evenArr = 0;
+    for (var i = 0; i < arr.length; i++){
+        if (arr[i] === % 2){
+            return true;
+        } else (arr[i] !== % 2) {
+            return false;
+        }
+    }
 }
 
 /**
@@ -227,7 +238,7 @@ function isSpecialArray(){
  * Tests are case sensitive.
  * Each array item is unique.
  */
-function removeDuplicates(){
+function removeDuplicates(arr){
 
 }
 
@@ -244,7 +255,7 @@ function removeDuplicates(){
  * Notes
  * All of the letters in the input list will always be lowercase.
  */
-function mapping(){
+function mapping(key, value){
 
 }
 
@@ -267,7 +278,7 @@ function mapping(){
  * >> tpChecker({ people: 3, tp: 20 }) ➞ "Your TP will last 58 days, no need to panic!"
  * >> tpChecker({ people: 4, tp: 12 }) ➞ "Your TP will last 26 days, no need to panic!"
  */
-function tpChecker(){
+function tpChecker(key, values){
 
 }
 
@@ -296,7 +307,7 @@ function tpChecker(){
  *       }
  *    ]) ➞ [5, 5, 4]
  */
-function getStudentTopNotes(){
+function getStudentTopNotes(arr){
 
 }
 
@@ -319,7 +330,7 @@ function getStudentTopNotes(){
  * Notes
  * All wines will be different prices, so there is no confusion in the ordering.
  */
-function chosenWIne(){
+function chosenWIne(arr){
 
 }
 
@@ -348,7 +359,7 @@ function convertAddressToObject(){
  *       {name: 'Kenneth Howell', pets: 2}
  *    ]) ➞ 11
  */
-function totalPets(){
+function totalPets(arr){
 
 }
 
