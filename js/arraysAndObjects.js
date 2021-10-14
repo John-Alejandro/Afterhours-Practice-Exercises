@@ -61,7 +61,7 @@ function isAvgWhole(arr) {
         arrSum =  arr[i] + arrSum
     }
     var arrAvg = arrSum/arr.length
-   return Number.isInteger(arrAvg);
+    return Number.isInteger(arrAvg);
 }
 
 /**
@@ -148,11 +148,11 @@ return tileSum;
  * Notes
  * Return an empty array if the object is empty.
  */
-// function toArray(obj){
-// var objectToArray = Object.values([]);
-// return objectToArray;
-// }
-// var toArray = object.entries();
+function toArray(obj){
+var objectToArray = Object.values([]);
+return objectToArray;
+}
+var toArray = object.entries();
 /**
  * Array of Multiples
  * Create a function named arrayOfMultiples that takes two numbers as arguments (num, length) and returns an array of multiples of num until the array length reaches length.
@@ -166,13 +166,13 @@ return tileSum;
  * Notes
  * Notice that num is also included in the returned array.
  */
-// function arrayOfMultiples(num,length){
-//     var numMultiples = 0;
-//     for (var i = 0; i < length.length; i++){
-//         numMultiples = ((num[i] + 1) * num);
-//     }
-//     return numMultiples;
-// }
+function arrayOfMultiples(num,length){
+    var numMultiples = 0;
+    for (var i = 0; i < length.length; i++){
+        numMultiples = (num[i] * 1) ;
+    }
+    return numMultiples;
+}
 
 /**
  * Get Sum of People's Budget
@@ -213,16 +213,16 @@ return totalSum;
  * >> isSpecialArray([2, 7, 8, 8, 6, 1, 6, 3]) ➞ false
  *    // Index 3 has an even number 8.
  */
-function isSpecialArray(arr){
-    var evenArr = 0;
-    for (var i = 0; i < arr.length; i++){
-        if (arr[i] === % 2){
-            return true;
-        } else (arr[i] !== % 2) {
-            return false;
-        }
-    }
-}
+// function isSpecialArray(arr){
+//     // var evenArr = 0;
+//     for (var i = 0; i < arr.length; i++){
+//         if (arr[i] === % 2){
+//             return true;
+//         } else (arr[i] !== % 2) {
+//             return false;
+//         }
+//     }
+// }
 
 /**
  * Remove Duplicates from an Array
