@@ -12,6 +12,11 @@
  * Notes
  * Expect any positive number between 1 and 1000.
  */
+function addUp(num) {
+    if (num === 1) return 1;
+    return num + addUp(num -1);
+    }
+
 
 
 /**
@@ -27,6 +32,16 @@
  * Notes
  * Your output must be case-sensitive (see second example).
  */
+
+function charCount(letter,string) {
+    let letter_Count = 0;
+    for (let i = 0; i < string.length; i++){
+        if (string[i] === letter) {
+            letter_Count +=1;
+        }
+    }
+    return letter_Count;
+}
 
 
 /**
@@ -46,7 +61,17 @@
  * "y" is not considered a vowel.
  * Input always contains a vowel.
  */
+function firstVowel(string) {
+    var vowel_list ="aeiouAEIOU";
+    var vcount = 0;
 
+    for (var i = 0; i < string.length; i++) {
+        if (vowel_list.indexOf(string[i]) !== - 1) {
+             vcount += 1;
+        }
+    }
+    return vcount;
+}
 
 /**
  * TODO:
